@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+html, body {
+    width: 200vw;
+    background-color: blue;
+    color: white;
+}
+
+@theme {
+    --font-sans: "Mona Sans", sans-serif;
+    --color-white-50: #d9ecff;
+    --color-black-50: #1c1c21;
+    --color-black-100: #0e0e10;
+    --color-black-200: #282732;
+    --color-blue-50: #839cb5;
+    --color-blue-100: #2d2d38;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+}
